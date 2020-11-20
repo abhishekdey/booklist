@@ -1,0 +1,21 @@
+async function a1( ) {
+
+const result  = await 4;
+console.loog(result);
+
+}
+
+
+//a2 () => { setTimeout(() => 1, 100;)}
+
+
+
+What is  HOC?  HOC are react functions  that take input as components return the new component. It's called react compositional nature.
+controlled component: A component controls the input element within the form on subsequent user input. 
+Each state mutation having associated handler function.
+
+redux component: Store, REducer, Middleware, Action
+advantage of react: works on virtual dom over real dome, server side rendering, unidirectional data flow and data binding, reusable components.
+virtual dom: in memory representation of real dom.The representation of a UI is kept in memory and synced with the "real" DOM. 
+It's a step that happens between the render function being called and the displaying of elements on the screen. 
+This entire process is called reconciliation.

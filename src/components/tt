@@ -1,0 +1,422 @@
+
+
+
+function concat(array) {
+
+    return [].concat(...arr)
+}
+
+concat([4,5,[5,6]]);
+
+
+
+
+const users = [
+  {
+    "name":"John",
+    "age":30,
+    "title":"developer"
+  },
+  {
+    "name":"Red",
+    "age":26,
+    "title":"Jr Associate"
+  },
+  {
+    "name":"Tom",
+    "age":35,
+    "title":"manager"
+  }
+]
+
+//const newUser = [];
+
+var newUser = users.map( (value, index,array) => {
+    if(value.name === 'John') {
+        value.title = 'lead'
+    }
+    return value
+}
+);
+
+
+var code = 'tet/suuuu/tet/ksksksk'
+
+var regex =/\tet/g;
+regex.match(code);
+
+function toTitleCase(str) {
+    let index = 0;
+        return str.replace(
+            /\tet/g,
+            function(txt, index1) {
+                index;
+                return 'tet';
+            }
+        );
+        console.log(index);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+(function() {
+  var ioute = 'test';
+
+  setTimeout({() => console.log(ioute)}, 1000)
+
+})()
+
+
+
+
+
+
+    const carDetails = {
+     name: "Ford Mustang",
+     yearBought: 2005,
+     getName(){
+        return this.name;
+     },
+     isRegistered: true
+   };
+
+     console.log(carDetails.getName());  // undefined
+
+   var name = "Ford Ranger";
+   var getCarName = carDetails.getName;
+
+   console.log(getCarName()); //
+
+var getCarName = 
+
+
+
+vr p1 = new Promise ((resolve, reject) => 
+    settimeoutresolve (value))
+    ,reject => (value)
+)
+
+p1.then(value =>  ).catch( (value => ))
+
+
+async function f() {
+  let promise = new Promise((resolve, reject) => 
+  setTimeout(() => resolve(;osone)));
+
+}
+
+
+
+  let result = await promise;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Car(color) {
+    this.color = 'djdjd';
+}
+
+function Mission(time, color) {
+    Car.call(this,color);
+    this.time = time;
+}
+
+Mission.prototype = Car.prototype;
+Mission.constructor = Mission();
+
+
+var tes = new Mission(9, 'fkfkf');
+
+
+const  person = {a :  90, getA : function() {console.log(`person value is ${this.a}` )}};
+const  person = {a :  90, getA : () => {console.log(`person value is ${this.a}` )}};
+const  person = {a :  90, console.log(a)};
+const person2 = function() { this.A =  78, this.getA = () => console.log(`person2 value is ${this.a + this.A}`)};
+const person2 = function() { this.A =  78, this.getA = () => setTimeout(function () {console.log(`person2 value is ${this.a + this.A}`)}, 1000)};
+const person3 = function() { this.A =  78, this.getA = () => setTimeout(function ()   {console.log(`person3 value is  ${this.A}`)}, 1000)};
+const person4 = function() { this.A =  78, this.getA = () => setTimeout(()=>   {console.log(`person4 value is  ${this.A}`)}, 1000)};
+
+
+
+
+const carDetails = {
+    name: "Ford Mustang",
+    yearBought: 2005,
+    getName(){
+        this.name = 'test';
+        console.log(this.name + '  '  + name);
+       return this.name;
+    },
+    isRegistered: true
+  };
+
+    console.log(carDetails.getName());  // Ford Mustang
+
+  var name = "Ford Ranger";
+  var getCarName = carDetails.getName;
+
+  console.log(getCarName());
+
+
+
+
+this.a = 21;
+this.A = 42;
+
+var t9 = 90;
+
+function a() {
+   this.t1 = 903;
+   t9 = 9030;
+   console.log(this.t1);
+   console.log(window === this);
+    // return  () =>  {
+    //     console.log(this.t1);
+    //     console.log(t9);
+    // }
+}
+var ty = new a();
+this.t1 = 89;
+window.a();
+
+
+
+
+
+
+
+
+//scope
+
+var r1 = 90;
+
+var r2 = ()=> {console.log(r1); r1 = 67;}
+
+var r3 = function() {console.log(r1); var r1 = 67;}
+
+
+var t = function() { return [].bind()};
+t();
+
+
+var ty = {
+  name: 'tetet',
+  getName : function() { console.log(this.name);}
+}
+
+var t = () => setTimeout(ty.getName.bind(this), 1000 );
+
+
+
+
+
+
+// what is prototype
+
+function myNewFunc() {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum = sum + arguments[i];
+    }
+    return sum;
+}
+
+function myNewFunc() {
+    this.sum = 0;
+    return () => {
+        this.sum1 = 0;
+        return function() { return ++this.sum + this.sum1};
+    }
+}
+
+function nonArrowFunc() {
+    this.sum = 0;
+    return function() { 
+        this.sum1 = 0;
+        return () => ++this.sum + this.sum1;
+    }
+}
+
+
+(function nonarrow() {
+    let sum = 0;
+    for(sum = 0; sum < 6; sum++) {
+        debugger;
+        setTimeout(() => {
+            console.log(sum);
+        }, 100);
+    }
+})()
+
+var f = function() {
+    var a = 10;
+    return function g() {
+      var b = a + 1;
+      return b;
+    };
+}
+
+function Persion() {
+    this.a = 10;
+    g = () => this.a;
+    function g1() {
+        this.a = this.a + 1;
+    }
+}
+
+(function eventlopop(){
+    let 
+})
+const a = () => console.log(1);
+const a1 = function() { console.log(1);}
+const a2 = function() { console.log(1);}
+
+
+// Sample code to read input and write output:
+
+/*
+function main(input) 
+{
+    process.stdout.write("Hello " + input);  // Write output to STDOUT
+}
+process.stdin.resume();
+process.stdin.setEncoding("utf-8");
+var stdin_input = "";
+
+process.stdin.on("data", function (input) 
+{
+        stdin_input += input;   // Read input from STDIN
+});
+
+process.stdin.on("end", function () 
+{
+        main(stdin_input);
+});
+
+*/
+
+// Warning: Printing unwanted or ill-formatted 
+// data to output will cause the test cases to fail
+console.log(input);
+function main(input)
+{
+        var stream = [...input];
+        var stringList = {};
+        var list  = [];
+        stream.forEach(function (value, index,array) { 
+            stringList[value] = stringList[value] ? Object.value(stringList[value]) + 1  : 1;
+        })
+        for(let key in stringList) {
+            if(stringList[key] === 1) list.push(stringList[key]);
+        }
+        console.log(list.length);   
+}
+
+
+const { func } = require("prop-types");
+
+
+input  = [1,2,3,4,5,1,2];
+
+
+var count = {};
+input.forEach(function(i) {
+    count[i] = count[i] ? count[i] +1 : 1;
+}) 
+
+var add = return function(a) {
+            return function (b) {
+                return function function(c) {
+                    a + b + c ;
+                }
+            }
+} 
+
+var linkedInList = function() {
+    debugger;
+    this.initial = null,
+    Node = function() {
+        this.left = null;
+        this.middle = null;
+        this.right = null;
+    },
+    this.insert = function(value) {
+        var newNode = new Node();
+        if(this.initial) {
+            newNode.middle = value;
+            newNode.right = null;
+            var right = this.initial.right;
+            var left = this.initial;
+    
+            while(right) {
+                right = right.right;
+                left = left.right;
+            }
+            newNode.left = left;
+            left.right = newNode;
+        } else {
+            newNode.middle = value;
+            newNode.right = null;
+            this.initial = newNode;
+        }
+    }
+    this.delete = function (params) {
+        if(this.initial) {
+            var right = this.initial;
+            var left = this.initial;
+            while(right) {
+                if(right.middle !== params) {
+                    right = right.right;
+                    left = left.right;
+                } else {
+                    left = left.left;
+                    if(right) {
+                        right = right.right;
+                    }
+                    left.right = right;
+                    if(right) {
+                        right = left;
+                    }
+                    break;
+                }
+            }
+        }
+    }
+}
+
+
+var a1 = new linkedInList();
+
+
+
+
+
+
