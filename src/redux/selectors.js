@@ -17,7 +17,3 @@ export const getTodosByVisibilityFilter = (store, visibilityFilter) => {
         default: return allTodos;
     }
 };
-
-
-
-var digit = /\^d\d:\d\d$/;

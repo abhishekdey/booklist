@@ -6,7 +6,7 @@ import { getTodosByVisibilityFilter} from '../redux/selectors';
 
 const TodoList = ({todos}) => (
     <ul>
-        {todos && todos.length ? todos.map((todo, index) => {
+        {todos && todos.length ? todos.map((todo) => {
             return <Todo key={`todo-${todo.id}`} todo={todo}/>
         }) : "No todosss"}
     </ul>

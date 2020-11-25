@@ -1,14 +1,16 @@
-import {userDetails} from '../constants';
-import { addTodo } from './actions';
+import { apiListTodo } from './actions';
+import { userDetails } from '../constants';
 
-export const asyncApiCall = (values) => {
-   return async dispatch => {
-       try {
-            const result = await fetch(userDetails)
-            dispatch(addTodo(result));
-       }
-       catch(err) {
-            dispatch(errorHandler(err));
-       }
-   }
+function fetchUserDetails() {
+     return fetch(userDetails);
+}
+
+export default function getListSync() {
+     var list = 'Middleware thunk';
+     return function (dispatch) {
+          return fetchUserDetails().then(
+               (result) => dispatch(apiListTodo(list)),
+               (error) => dispatch(apiListTodo(list))
+          )
+     }
 }
